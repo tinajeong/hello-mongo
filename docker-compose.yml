@@ -22,7 +22,7 @@ services:
     container_name: mongodb-container
     ports:
       - "27017:27017"
-    volumes:
+    volumes: # 영구저장
       - ./mongo-data:/data/db
     networks:
       - fastapi-network
